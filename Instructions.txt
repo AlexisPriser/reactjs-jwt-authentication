@@ -1,0 +1,21 @@
+1. Install
+
+Add a .env file at the root of the project and add the following variables:
+
+JWT_SECRET_KEY=
+SENDGRID_API_KEY=
+SALT=
+
+Their content is up to you, they are the private keys making this API secured.
+
+run 'npm install' in the terminal to set-up every dependencies listed in package.json.
+
+
+2. Run App
+
+Back-end:
+In Vscode run in debug mode the server.js file
+
+Front-end (recommend to run the back-end too):
+In the terminal enter: cd .\reactjs-jwt-token-authentication\
+then: npm start
