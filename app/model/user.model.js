@@ -20,8 +20,15 @@ module.exports = (sequelize, Sequelize) => {
     },
     pending: {
       type: Sequelize.TINYINT
+    },
+    change: {
+      type: Sequelize.STRING
+    },
+    processdate:{
+      type: Sequelize.DATE
     }
   });
   
+  //pending: 1=password, 2=username
   return User;
 }

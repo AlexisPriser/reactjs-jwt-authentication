@@ -23,7 +23,9 @@ module.exports = function (app) {
 
   app.post('/api/auth/mail',controller.sendEmailPass);
 
-  app.get("/api/auth/confirm/:confirmationCode", controller.verifyUser);
+  app.get("/api/auth/PasswordConfirm/:confirmationCode", controller.verifyUserValidNewPass);
+
+  app.get("/api/auth/NameConfirm/:confirmationCode", controller.verifyUserValidNewName);
  
   app.get('/api/test/user', [authJwt.verifyToken], controller.userContent);
  
